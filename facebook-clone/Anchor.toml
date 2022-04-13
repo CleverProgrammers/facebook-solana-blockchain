@@ -1,0 +1,15 @@
+[features]
+seeds = false
+[programs.devnet]
+facebook_clone = "GNSDgX32cCeuuN96GRiBmFE4BAXqgFpftqxSCzDrdkTd"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+start = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 app/start.ts"
